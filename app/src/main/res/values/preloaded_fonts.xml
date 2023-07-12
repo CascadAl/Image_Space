@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/comfortaa_300</item>
+        <item>@font/comfortaa_400</item>
+        <item>@font/comfortaa_700</item>
+        <item>@font/roboto_100</item>
+        <item>@font/roboto_100i</item>
+        <item>@font/roboto_300</item>
+        <item>@font/roboto_300i</item>
+        <item>@font/roboto_400</item>
+        <item>@font/roboto_400i</item>
+        <item>@font/roboto_500</item>
+        <item>@font/roboto_500i</item>
+        <item>@font/roboto_700</item>
+        <item>@font/roboto_700i</item>
+        <item>@font/roboto_900</item>
+        <item>@font/roboto_900i</item>
+    </array>
+</resources>
