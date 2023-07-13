@@ -3,11 +3,15 @@
     <!--    main-->
     <color name="background">#FFFFFF</color>
     
-    <!--    Text-->
+    <!--    text-->
     <color name="primary_text_color">#000000</color>
     <color name="secondary_text_color">#FFFFFF</color>
 
-    <!--    Button-->
+    <!--    button-->
     <color name="primary_button_color">#000000</color>
     <color name="secondary_button_color">#FFFFFF</color>
+
+    <!--    progress bar-->
+    <color name="progress_container_color">#66FFFFFF</color>
+    <color name="progress_color">#B3000000</color>
 </resources>
