@@ -11,9 +11,9 @@
             android:layout_height="0dp"
             android:layout_marginBottom="@dimen/main_margin"
             android:scaleType="centerCrop"
+            android:src="@drawable/img_onboarding"
             app:layout_constraintBottom_toTopOf="@+id/btn_login"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/img_onboarding" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/TV.OnboardingLabel"

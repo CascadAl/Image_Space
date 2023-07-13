@@ -12,8 +12,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:defaultNavHost="true"
-            app:navGraph="@navigation/onboarding_navigation">
+            app:navGraph="@navigation/onboarding_navigation" />
 
-        </androidx.fragment.app.FragmentContainerView>
+7        <com.example.imagespace.components.ProgressView
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </FrameLayout>
 </layout>
