@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.imagespace.databinding.ViewToolbarBinding
 
+typealias OnBackClickListener = () -> Unit
+
 class ToolbarView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
@@ -16,10 +18,14 @@ class ToolbarView @JvmOverloads constructor(
         ViewToolbarBinding.inflate(LayoutInflater.from(context), this, true)
 
     fun setOnBackClickListener(listener: OnBackClickListener) {
-        listener.onClick()
+        binding.btnBack.setOnClickListener {
+            listener.invoke()
+        }
     }
+}
 
-    interface OnBackClickListener {
-        fun onClick()
-    }
+interface ToolbarListener {
+    fun showToolbar()
+    fun hideToolbar()
+    fun setOnBackClickListener(listener: OnBackClickListener)
 }

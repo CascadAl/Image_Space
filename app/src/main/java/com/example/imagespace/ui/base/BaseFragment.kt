@@ -46,6 +46,10 @@ abstract class BaseFragment<T : ViewDataBinding>(
         navController.navigate(directions)
     }
 
+    protected fun goBack() {
+        navController.popBackStack()
+    }
+
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
