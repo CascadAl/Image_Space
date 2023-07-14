@@ -14,4 +14,9 @@
     <!--    progress bar-->
     <color name="progress_container_color">#66FFFFFF</color>
     <color name="progress_color">#B3000000</color>
+
+    <!--    edit text-->
+    <color name="edit_text_background">#FFFFFF</color>
+    <color name="edit_text_border_color">#000000</color>
+    <color name="edit_text_cursor_color">#B3000000</color>
 </resources>

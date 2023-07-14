@@ -4,13 +4,13 @@
     <style name="TV">
         <item name="android:textSize">@dimen/main_text_size</item>
         <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <style name="TV.OnboardingLabel">
         <item name="android:fontFamily">@font/comfortaa_400</item>
         <item name="android:textSize">@dimen/big_label_text_size</item>
         <item name="android:letterSpacing">-0.01</item>
-        <item name="android:includeFontPadding">false</item>
     </style>
 
     <style name="TV.Title">
@@ -56,7 +56,7 @@
 
     <!--    BUTTON-->
     <style name="BTN">
-
+        <item name="android:minHeight">@dimen/button_height</item>
     </style>
 
     <style name="BTN.Primary">
@@ -71,4 +71,11 @@
 
 
     <!--    EDITTEXT-->
+    <style name="ET">
+        <item name="android:minHeight">@dimen/edit_text_height</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:textCursorDrawable">@drawable/bg_edit_text_cursor</item>
+        <item name="android:textAppearance">@style/TV.Normal</item>
+        <item name="android:paddingHorizontal">@dimen/small_padding</item>
+    </style>
 </resources>
