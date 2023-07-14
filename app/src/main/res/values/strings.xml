@@ -6,4 +6,9 @@
     <string name="next">Next</string>
     <string name="enter_login">Enter login</string>
     <string name="enter_password">Enter password</string>
+    <string name="discover">Discover</string>
+    <string name="search">Search</string>
+    <string name="upload_photo">Upload photo</string>
+    <string name="profile">Profile</string>
+    <string name="chats">Chats</string>
 </resources>

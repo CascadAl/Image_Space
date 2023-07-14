@@ -9,6 +9,7 @@
     <!--    padding-->
     <dimen name="small_padding">16dp</dimen>
     <dimen name="main_padding">20dp</dimen>
+    <dimen name="big_padding">32dp</dimen>
 
     <!--    text-->
     <dimen name="small_text_size">11sp</dimen>
