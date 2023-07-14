@@ -6,8 +6,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:focusableInTouchMode="true"
-        android:focusable="true"
         android:padding="@dimen/small_padding"
         tools:context=".ui.onboarding.registration.RegistrationFragment">
 

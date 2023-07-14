@@ -4,7 +4,6 @@ import android.os.Bundle
 import com.example.imagespace.components.OnBackClickListener
 import com.example.imagespace.components.ProgressLoader
 import com.example.imagespace.components.ToolbarListener
-import com.example.imagespace.components.ToolbarView
 import com.example.imagespace.databinding.ActivityOnboardingBinding
 import com.example.imagespace.extensions.toGone
 import com.example.imagespace.extensions.toVisible
