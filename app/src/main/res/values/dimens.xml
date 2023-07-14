@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    margin-->
+    <dimen name="button_between_margin">5dp</dimen>
+    <dimen name="small_margin">16dp</dimen>
+    <dimen name="main_margin">20dp</dimen>
+    <dimen name="big_margin">32dp</dimen>
+
+    <!--    padding-->
+    <dimen name="small_padding">16dp</dimen>
+    <dimen name="main_padding">20dp</dimen>
+
+    <!--    text-->
+    <dimen name="small_text_size">11sp</dimen>
+    <dimen name="main_text_size">13sp</dimen>
+    <dimen name="normal_text_size">15sp</dimen>
+    <dimen name="title_text_size">36sp</dimen>
+    <dimen name="big_label_text_size">48sp</dimen>
+
+    <!--    radius-->
+    <dimen name="normal_radius">6dp</dimen>
+
+    <!--    button-->
+    <dimen name="button_border_width">2dp</dimen>
+    <dimen name="button_height">52dp</dimen>
+
+    <!--    edit text-->
+    <dimen name="edit_text_border_width">2dp</dimen>
+    <dimen name="edit_text_height">52dp</dimen>
+</resources>

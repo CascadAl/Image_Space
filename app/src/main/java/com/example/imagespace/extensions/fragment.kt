@@ -1,9 +1,11 @@
 package com.example.imagespace.extensions
 
+import android.content.Context
 import android.os.Build
 import android.view.WindowInsets
 import android.view.WindowInsetsController
 import android.view.WindowManager
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
@@ -39,5 +41,12 @@ fun Fragment.showStatusBar() = with(requireActivity()) {
         window.clearFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
+    }
+}
+
+fun Fragment.hideKeyboard() {
+    view?.findFocus()?.let {
+        val imm = requireContext().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(it.windowToken, 0)
     }
 }

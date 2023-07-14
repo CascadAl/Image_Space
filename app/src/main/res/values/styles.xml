@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    TEXTVIEW-->
+    <style name="TV">
+        <item name="android:textSize">@dimen/main_text_size</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TV.OnboardingLabel">
+        <item name="android:fontFamily">@font/comfortaa_400</item>
+        <item name="android:textSize">@dimen/big_label_text_size</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="TV.Title">
+        <item name="android:fontFamily">@font/comfortaa_400</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="TV.SubTitle">
+        <item name="android:fontFamily">@font/roboto_900</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TV.Normal">
+        <item name="android:fontFamily">@font/roboto_400</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="TV.Main">
+        <item name="android:fontFamily">@font/roboto_700</item>
+    </style>
+
+    <style name="TV.Small">
+        <item name="android:fontFamily">@font/roboto_400</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <style name="TV.Button">
+        <item name="android:fontFamily">@font/roboto_900</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TV.Button.Primary">
+        <item name="android:textColor">@color/secondary_text_color</item>
+    </style>
+
+    <style name="TV.Button.Secondary">
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+
+
+    <!--    BUTTON-->
+    <style name="BTN">
+        <item name="android:minHeight">@dimen/button_height</item>
+    </style>
+
+    <style name="BTN.Primary">
+        <item name="android:background">@drawable/bg_primary_button</item>
+        <item name="android:textAppearance">@style/TV.Button.Primary</item>
+    </style>
+
+    <style name="BTN.Secondary">
+        <item name="android:background">@drawable/bg_secondary_button</item>
+        <item name="android:textAppearance">@style/TV.Button.Secondary</item>
+    </style>
+
+
+    <!--    EDITTEXT-->
+    <style name="ET">
+        <item name="android:minHeight">@dimen/edit_text_height</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:textCursorDrawable">@drawable/bg_edit_text_cursor</item>
+        <item name="android:textAppearance">@style/TV.Normal</item>
+        <item name="android:paddingHorizontal">@dimen/small_padding</item>
+    </style>
+</resources>

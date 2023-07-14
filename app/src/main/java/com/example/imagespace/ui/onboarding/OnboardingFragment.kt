@@ -16,7 +16,11 @@ class OnboardingFragment :
     }
 
     override fun initListeners() = with(binding) {
-        tvTitle.setOnClickListener {
+        btnLogin.setOnClickListener {
+            navigate(OnboardingFragmentDirections.showLogin())
+        }
+
+        btnRegister.setOnClickListener {
             navigate(OnboardingFragmentDirections.showRegistration())
         }
     }

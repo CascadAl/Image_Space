@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Image Space</string>
+    <string name="log_in">Log in</string>
+    <string name="register">Register</string>
+    <string name="photo_label">photo</string>
+    <string name="next">Next</string>
+    <string name="enter_login">Enter login</string>
+    <string name="enter_password">Enter password</string>
 </resources>
