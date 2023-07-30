@@ -4,10 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.ViewDataBinding
+import com.example.imagespace.components.ProgressLoader
+import com.example.imagespace.components.ToolbarListener
 
 abstract class BaseActivity<T : ViewDataBinding>(
     private val bindingInflater: (LayoutInflater) -> T
-) : AppCompatActivity() {
+) : AppCompatActivity(),
+    ProgressLoader,
+    ToolbarListener {
 
     protected lateinit var binding: T
 

@@ -1,6 +1,7 @@
 package com.example.imagespace.di
 
 import com.example.imagespace.BuildConfig
+import com.example.imagespace.api.DiscoverApi
 import com.example.imagespace.network.BaseInterceptor
 import dagger.Module
 import dagger.Provides
@@ -29,4 +30,9 @@ object NetworkModule {
         .addInterceptor(BaseInterceptor())
         .authenticator(BaseInterceptor())
         .build()
+
+    @Provides
+    @Singleton
+    fun provideDiscoverApi(retrofit: Retrofit): DiscoverApi =
+        retrofit.create(DiscoverApi::class.java)
 }

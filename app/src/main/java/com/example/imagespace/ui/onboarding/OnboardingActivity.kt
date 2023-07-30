@@ -2,8 +2,6 @@ package com.example.imagespace.ui.onboarding
 
 import android.os.Bundle
 import com.example.imagespace.components.OnBackClickListener
-import com.example.imagespace.components.ProgressLoader
-import com.example.imagespace.components.ToolbarListener
 import com.example.imagespace.databinding.ActivityOnboardingBinding
 import com.example.imagespace.extensions.toGone
 import com.example.imagespace.extensions.toVisible
@@ -12,9 +10,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class OnboardingActivity :
-    BaseActivity<ActivityOnboardingBinding>(ActivityOnboardingBinding::inflate),
-    ProgressLoader,
-    ToolbarListener {
+    BaseActivity<ActivityOnboardingBinding>(ActivityOnboardingBinding::inflate) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
