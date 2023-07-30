@@ -6,13 +6,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/bottom_nav_top_border_height"
-            android:layout_gravity="top"
-            android:background="@color/bottom_nav_top_line_color"
-            app:layout_constraintBottom_toTopOf="@+id/nav_view" />
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/nav_view"
             android:layout_width="match_parent"
@@ -23,8 +16,16 @@
             app:elevation="0dp"
             app:itemIconSize="@dimen/bottom_nav_item_icon_size"
             app:itemPaddingTop="0dp"
-            app:itemRippleColor="@color/bottom_nav_background"
+            android:background="@color/bottom_nav_background"
+            app:itemRippleColor="@color/bottom_nav_item_ripple"
             app:labelVisibilityMode="unlabeled"
             app:menu="@menu/bottom_nav_menu" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_nav_top_border_height"
+            android:layout_gravity="top"
+            android:background="@color/bottom_nav_top_line_color"
+            app:layout_constraintBottom_toTopOf="@+id/nav_view" />
     </FrameLayout>
 </layout>

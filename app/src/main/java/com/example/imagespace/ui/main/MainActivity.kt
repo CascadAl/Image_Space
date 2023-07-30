@@ -1,9 +1,11 @@
 package com.example.imagespace.ui.main
 
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.navigation.fragment.NavHostFragment
 import com.example.imagespace.R
 import com.example.imagespace.databinding.ActivityMainBinding
+import com.example.imagespace.extensions.toast
 import com.example.imagespace.ui.base.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -19,5 +21,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         val navController = navHostFragment.navController
 
         binding.navView.setupWithNavController(navController)
+    }
+
+    fun onUploadPhotoClick(item: MenuItem) {
+        toast("${item.title}")
     }
 }
