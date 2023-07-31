@@ -2,6 +2,7 @@
 <resources>
     <!--    margin-->
     <dimen name="button_between_margin">5dp</dimen>
+    <dimen name="super_small_margin">8dp</dimen>
     <dimen name="small_margin">16dp</dimen>
     <dimen name="main_margin">20dp</dimen>
     <dimen name="big_margin">32dp</dimen>
@@ -35,4 +36,7 @@
     <dimen name="bottom_nav_item_icon_size">40dp</dimen>
     <dimen name="bottom_nav_padding_top">9dp</dimen>
     <dimen name="bottom_nav_padding_bottom">21dp</dimen>
+
+    <!--    image-->
+    <dimen name="small_image_size">28dp</dimen>
 </resources>

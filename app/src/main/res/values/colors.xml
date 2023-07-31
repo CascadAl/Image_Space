@@ -6,6 +6,7 @@
     <!--    text-->
     <color name="primary_text_color">#000000</color>
     <color name="secondary_text_color">#FFFFFF</color>
+    <color name="light_dark">#CC000000</color>
 
     <!--    button-->
     <color name="primary_button_color">#000000</color>

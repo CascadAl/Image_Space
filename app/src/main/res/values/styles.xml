@@ -39,6 +39,10 @@
         <item name="android:textSize">@dimen/small_text_size</item>
     </style>
 
+    <style name="TV.Small.LightDark">
+        <item name="android:textColor">@color/light_dark</item>
+    </style>
+
     <style name="TV.Button">
         <item name="android:fontFamily">@font/roboto_900</item>
         <item name="android:letterSpacing">0.04</item>
@@ -77,5 +81,10 @@
         <item name="android:textCursorDrawable">@drawable/bg_edit_text_cursor</item>
         <item name="android:textAppearance">@style/TV.Normal</item>
         <item name="android:paddingHorizontal">@dimen/small_padding</item>
+    </style>
+
+    <!--    IMAGEVIEW-->
+    <style name="CircleImageView">
+        <item name="cornerSize">50%</item>
     </style>
 </resources>
