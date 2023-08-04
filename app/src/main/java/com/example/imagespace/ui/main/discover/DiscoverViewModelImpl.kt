@@ -4,9 +4,11 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.imagespace.mapping.toNewPhotoData
 import com.example.imagespace.network.ApiResponse
 import com.example.imagespace.network.model.response.PhotoResponse
 import com.example.imagespace.repository.discover.DiscoverRepository
+import com.example.imagespace.ui.main.discover.adapter.NewPhotoData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -22,8 +24,8 @@ class DiscoverViewModelImpl @Inject constructor(
     private val _error = MutableLiveData<String>()
     override val error: LiveData<String> = _error
 
-    private val _newPhotos = MutableLiveData<List<PhotoResponse>>()
-    override val newPhotos: LiveData<List<PhotoResponse>> = _newPhotos
+    private val _newPhotos = MutableLiveData<List<NewPhotoData>>()
+    override val newPhotos: LiveData<List<NewPhotoData>> = _newPhotos
 
     private val _popularPhotos = MutableLiveData<List<PhotoResponse>>()
     override val popularPhotos: LiveData<List<PhotoResponse>> = _popularPhotos
@@ -37,7 +39,10 @@ class DiscoverViewModelImpl @Inject constructor(
         viewModelScope.launch {
             when (val result = repository.getNewPhotos(1, 10)) {
                 is ApiResponse.Error -> _uiState.postValue(DiscoverViewModel.UiState.Error(result.error))
-                is ApiResponse.Success -> _uiState.postValue(DiscoverViewModel.UiState.Success)
+                is ApiResponse.Success -> {
+                    _newPhotos.postValue(result.data.map { it.toNewPhotoData() })
+                    _uiState.postValue(DiscoverViewModel.UiState.Success)
+                }
             }
         }
     }

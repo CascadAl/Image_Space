@@ -22,13 +22,6 @@ data class PhotoResponse(
 ) : Parcelable
 
 @Parcelize
-data class ProfileImage(
-    @SerializedName("small") var small: String? = null,
-    @SerializedName("medium") var medium: String? = null,
-    @SerializedName("large") var large: String? = null
-) : Parcelable
-
-@Parcelize
 data class Urls(
     @SerializedName("raw") var raw: String? = null,
     @SerializedName("full") var full: String? = null,
@@ -49,4 +42,11 @@ data class User(
     @SerializedName("total_collections") var totalCollections: Int? = null,
     @SerializedName("total_likes") var totalLikes: Int? = null,
     @SerializedName("total_photos") var totalPhotos: Int? = null
+) : Parcelable
+
+@Parcelize
+data class ProfileImage(
+    @SerializedName("small") var small: String? = null,
+    @SerializedName("medium") var medium: String? = null,
+    @SerializedName("large") var large: String? = null
 ) : Parcelable

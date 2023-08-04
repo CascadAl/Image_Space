@@ -5,9 +5,11 @@
     <dimen name="super_small_margin">8dp</dimen>
     <dimen name="small_margin">16dp</dimen>
     <dimen name="main_margin">20dp</dimen>
+    <dimen name="normal_margin">24dp</dimen>
     <dimen name="big_margin">32dp</dimen>
 
     <!--    padding-->
+    <dimen name="super_small_padding">8dp</dimen>
     <dimen name="small_padding">16dp</dimen>
     <dimen name="main_padding">20dp</dimen>
     <dimen name="big_padding">32dp</dimen>

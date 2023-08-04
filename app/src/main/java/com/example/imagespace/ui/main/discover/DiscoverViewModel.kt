@@ -2,6 +2,7 @@ package com.example.imagespace.ui.main.discover
 
 import androidx.lifecycle.LiveData
 import com.example.imagespace.network.model.response.PhotoResponse
+import com.example.imagespace.ui.main.discover.adapter.NewPhotoData
 
 interface DiscoverViewModel {
 
@@ -13,7 +14,7 @@ interface DiscoverViewModel {
 
     val uiState: LiveData<UiState>
     val error: LiveData<String>
-    val newPhotos: LiveData<List<PhotoResponse>>
+    val newPhotos: LiveData<List<NewPhotoData>>
     val popularPhotos: LiveData<List<PhotoResponse>>
 
     fun getNewPhotos()

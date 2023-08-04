@@ -14,4 +14,10 @@ class UserInfoView @JvmOverloads constructor(
 
     private val binding: ViewUserInfoBinding =
         ViewUserInfoBinding.inflate(LayoutInflater.from(context), this, true)
+
+    fun submitData(data: UserInfoData?) {
+        data?.let {
+            binding.data = it
+        }
+    }
 }
