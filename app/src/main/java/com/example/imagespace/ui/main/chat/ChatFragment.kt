@@ -1,7 +1,7 @@
 package com.example.imagespace.ui.main.chat
 
 import com.example.imagespace.databinding.FragmentChatBinding
-import com.example.imagespace.ui.base.BaseFragment
+import com.example.imagespace.ui.base.BaseUiFragment
 
-class ChatFragment : BaseFragment<FragmentChatBinding>(FragmentChatBinding::inflate) {
+class ChatFragment : BaseUiFragment<FragmentChatBinding>(FragmentChatBinding::inflate) {
 }

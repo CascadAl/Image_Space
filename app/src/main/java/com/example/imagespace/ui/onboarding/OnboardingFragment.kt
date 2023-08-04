@@ -3,12 +3,12 @@ package com.example.imagespace.ui.onboarding
 import com.example.imagespace.databinding.FragmentOnboardingBinding
 import com.example.imagespace.extensions.hideStatusBar
 import com.example.imagespace.extensions.showStatusBar
-import com.example.imagespace.ui.base.BaseFragment
+import com.example.imagespace.ui.base.BaseUiFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class OnboardingFragment :
-    BaseFragment<FragmentOnboardingBinding>(FragmentOnboardingBinding::inflate) {
+    BaseUiFragment<FragmentOnboardingBinding>(FragmentOnboardingBinding::inflate) {
 
     override fun initViews() {
         super.initViews()
