@@ -1,6 +1,7 @@
 package com.example.imagespace.repository.discover
 
 import com.example.imagespace.api.DiscoverApi
+import com.example.imagespace.api.PhotosOrderConstants
 import com.example.imagespace.network.ApiResponse
 import com.example.imagespace.network.BaseRepository
 import com.example.imagespace.network.model.response.PhotoResponse
@@ -15,7 +16,7 @@ class DiscoverRepositoryImpl @Inject constructor(
         perPage: Int
     ): ApiResponse<List<PhotoResponse>> = request {
         api.getPhotos(
-            DiscoverApi.PhotoOrderType.LATEST.value,
+            PhotosOrderConstants.LATEST,
             page,
             perPage
         )
@@ -26,7 +27,7 @@ class DiscoverRepositoryImpl @Inject constructor(
         perPage: Int
     ): ApiResponse<List<PhotoResponse>> = request {
         api.getPhotos(
-            DiscoverApi.PhotoOrderType.POPULAR.value,
+            PhotosOrderConstants.POPULAR,
             page,
             perPage
         )

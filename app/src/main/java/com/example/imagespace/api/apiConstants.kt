@@ -9,3 +9,8 @@ object ParamConstants {
     const val PAGE = "page"
     const val PER_PAGE = "per_page"
 }
+
+object PhotosOrderConstants {
+    const val LATEST = "latest"
+    const val POPULAR = "popular"
+}

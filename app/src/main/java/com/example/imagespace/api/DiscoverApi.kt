@@ -7,11 +7,6 @@ import retrofit2.http.Query
 
 interface DiscoverApi {
 
-    enum class PhotoOrderType(val value: String) {
-        LATEST("latest"),
-        POPULAR("popular")
-    }
-
     @GET(QueryConstants.PHOTOS)
     suspend fun getPhotos(
         @Query(ParamConstants.ORDER_BY) orderBy: String,
